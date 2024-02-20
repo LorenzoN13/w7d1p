@@ -1,18 +1,16 @@
 package it.epicode.w7d1p.controller;
-import com.cloudinary.Cloudinary;
-import com.example.progetto.exceptions.BadRequestException;
-import com.example.progetto.exceptions.NotFoundException;
-import com.example.progetto.requests.DipendentePatchRequest;
-import com.example.progetto.requests.DipendenteRequest;
-import com.example.progetto.responses.DefaultResponse;
-import com.example.progetto.services.DipendenteService;
+import it.epicode.w7d1p.exceptions.BadRequestException;
+import it.epicode.w7d1p.exceptions.NotFoundException;
+import it.epicode.w7d1p.request.DipendentePatchRequest;
+import it.epicode.w7d1p.request.DipendenteRequest;
+import it.epicode.w7d1p.response.DefaultResponse;
+import it.epicode.w7d1p.service.DipendenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

@@ -1,12 +1,13 @@
 package it.epicode.w7d1p.controller;
 
-import com.example.progetto.entities.Utente;
-import com.example.progetto.exceptions.BadRequestException;
-import com.example.progetto.exceptions.NotFoundException;
-import com.example.progetto.requests.LoginRequest;
-import com.example.progetto.requests.UtenteRequest;
-import com.example.progetto.security.JwtTools;
-import com.example.progetto.services.UtenteService;
+
+import it.epicode.w7d1p.exceptions.BadRequestException;
+import it.epicode.w7d1p.exceptions.NotFoundException;
+import it.epicode.w7d1p.model.Utente;
+import it.epicode.w7d1p.request.LoginRequest;
+import it.epicode.w7d1p.request.UtenteRequest;
+import it.epicode.w7d1p.security.JwtTools;
+import it.epicode.w7d1p.service.UtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
